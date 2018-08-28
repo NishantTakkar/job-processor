@@ -31,6 +31,8 @@ curl -X POST \
   -d '{
       "urlList": ["http://www.oracle.com","http://www.google.com"]
 }'
+
+
 API 2:
   To Track the status of a given JobId
 
