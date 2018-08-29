@@ -29,7 +29,7 @@ public class TaskServiceImpl implements TaskService{
     }
 
     public void submitTasks(List<Task> tasks) throws ValidationException {
-        if(Objects.isNull(tasks) && tasks.isEmpty()){
+        if(Objects.isNull(tasks) || tasks.isEmpty()){
             throw new ValidationException();
         }
         taskQueue.addAll(tasks);
