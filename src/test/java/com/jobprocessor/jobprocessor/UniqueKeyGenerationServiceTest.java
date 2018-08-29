@@ -7,13 +7,13 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 
-public class UniqueKeyGenerationServiceTests {
+public class UniqueKeyGenerationServiceTest {
 
 
     @InjectMocks
     UniqueKeyGenerationServiceImpl uniqueKeyGenerationService;
 
-    public UniqueKeyGenerationServiceTests() {
+    public UniqueKeyGenerationServiceTest() {
         MockitoAnnotations.initMocks(this);
     }
 

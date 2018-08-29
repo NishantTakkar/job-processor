@@ -7,17 +7,17 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 
-public class TaskServiceTests {
+public class TaskServiceTest {
 
     @InjectMocks
     TaskServiceImpl taskService;
 
-    public TaskServiceTests() {
+    public TaskServiceTest() {
         MockitoAnnotations.initMocks(this);
     }
 
-    @Test(expected = NullPointerException.class)
-    public void shouldThrowExceptionForSubmittingNull() {
+    @Test(expected = ValidationException.class)
+    public void shouldThrowExceptionForSubmittingNull() throws ValidationException {
       taskService.submitTasks(null);
     }
 

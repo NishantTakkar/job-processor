@@ -19,7 +19,7 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class JobProcessorApplicationTests {
+public class JobProcessorApplicationTest {
 
 	@Before
 	public void beforeTest(){

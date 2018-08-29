@@ -17,7 +17,7 @@ import org.mockito.MockitoAnnotations;
 
 import java.util.Arrays;
 
-public class JobServiceTests {
+public class JobServiceTest {
 
     @InjectMocks
     JobServiceImpl jobService;
@@ -28,7 +28,7 @@ public class JobServiceTests {
     @Mock
     TaskService taskService;
 
-    public JobServiceTests() {
+    public JobServiceTest() {
         MockitoAnnotations.initMocks(this);
     }
 
