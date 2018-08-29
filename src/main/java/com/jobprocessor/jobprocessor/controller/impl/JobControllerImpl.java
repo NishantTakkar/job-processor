@@ -35,10 +35,11 @@ public class JobControllerImpl implements JobController {
     public TrackResponse trackJob(@PathVariable(value = "id") String id) {
         TrackResponse trackResponse=null;
         try {
-            return jobService.trackJob(id);
+            trackResponse= jobService.trackJob(id);
         } catch (NotFoundException e) {
-            return new TrackResponse(Status.FAILED,e.getMessage());
+            trackResponse=new TrackResponse(null,"INVALID JOB ID");
         }
+        return trackResponse;
     }
 
 
